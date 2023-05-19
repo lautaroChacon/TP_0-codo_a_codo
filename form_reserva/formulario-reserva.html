@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./formulario.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/inicio (1).png">
+    <script type="javascript" src="./validación.js" src="./ddd.js"> </script>
+ 
+
+</head>
+
+<body class="bg-image">
+ <div class="container">
+    <h2>Reserva</h2>
+    <br>
+    <form action="https://formspree.io/f/xgebdror" method="POST" target="_blank" autocomplete="off">
+        <fieldset class="section">
+            <legend> Intereses </legend>
+            <label for="stablishment">Seleccione el sector de interés:</label>
+            <br><br> <!-- Ver de quitar <br> con padding, marging, etc en CSS  -->
+            <input type="radio" name="intereses" value="1" id="cafeButton"> Cafetería
+            <br><br>
+            <input type="radio" name="intereses" value="2" id="restauranteButton"> Restaurante
+            <br><br>
+            <input type="radio" name="intereses" value="3" id="pubButton"> Pub after office
+            <br><br>
+            <label for="turno">Establecimientos:</label>
+                    <select id="turno" required>
+                        <option value="vacío"></option>
+                        <option value="cafePaulin" class="cafe"> Café Paulin </option>
+                        <option value="cafeTortoni"class="cafe"> Café Tortoni </option>
+                        <option value="starbucks" class="cafe"> Starbucks Coffe </option>
+                        <option value="brighton" class="pub"> The New Brighton BAR NOTABLE </option>
+                        <option value="losInmortales" class="restaurante"> Los Inmortales </option>
+                        <option value="ilFratello" class="restaurante"> Il Fratello Ristorante </option>
+                        <option value="theCapitalBeer" class="pub"> The Capital Beer </option>
+                        <option value="elPalaciodelaPizza" class="restaurante"> El Palacio de la Pizza </option>
+                        <option value="sextoPiso" class="pub"> Sexto Piso - Pub </option>
+                    </select>
+                    <br><br>
+        </fieldset>        
+        <br>
+        <fieldset class="section">
+            <legend>Datos personales</legend>
+            <label for="firstname">Nombre:</label>
+            <input size="30" type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre aqui...">
+            <br><br>
+            <label for="lastname">Apellido:</label>
+            <input size="30" type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aqui...">
+            <br><br>
+            <label for="Fecha">Fecha de Reserva (mm/dd/yyyy):</label>
+            <input type="date" name="fecha" id="date" placeholder="Ingrese fecha de reserva..." required>
+            <br><br>
+            <label for="hora">Horario:</label>
+            <input type="time" name="datetime"  id="time" min="09:00" max="24:00" placeholder="Ingrese hora..." required>
+            <br><br>
+            <label for="telefono" id="contact" >Celular:</label>
+            <input type="tel" name="telefono" placeholder="Ingrese su celular aqui ....">
+            <br><br>
+        </fieldset>
+        <br>
+        <label for="comentarios">Comentarios:</label> <br><br>
+        <textarea class="comments" name="comentarios" rows="min" cols="min" placeholder="Deje sus comentarios aquí..."></textarea>
+        <br><br>
+        <input class="btn" type="submit" value="Enviar">
+        <button class="btn" type="reset">Reset</button>
+    </form>
+ </div>
+</body>
+
+</html>

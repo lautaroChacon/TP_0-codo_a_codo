@@ -1,0 +1,96 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+.background{
+    opacity: 0.7;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+    /* background-color:#dfd3c3ac; */
+    /* background-image: url(./media/Many-kinds-of-food-meat-tomatoes-pie_2560x1600.jpg) ; */
+    background-image: url(./media/Many-kinds-of-food-meat-tomatoes-pie_2560x1600.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 0 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+h2 {
+    font-weight: 750;
+    position:absolute;
+    top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container {
+    position:relative;
+    top:30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom:80px;
+    width: 700px;
+    height:760px;
+    padding: 20px;
+    background:#f7f4ef;
+    overflow:scroll;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* background-color:#dfd3c3ac; */    
+}
+
+ label, input, select, textarea {
+        background-color: #f8f8fba5;
+        border-radius: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        padding: 4px 4px 4px;
+        width: auto;
+}
+
+legend, label {
+    font-weight:550;
+}
+
+
+::placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+  }
+
+.btn {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    flex-direction: row;
+    color: #eee;
+    cursor: pointer;
+    font-size: 14px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+.comments {  
+    height: auto;
+    min-height: 60px;
+    width: 100%;
+
+}

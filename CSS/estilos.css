@@ -1,0 +1,170 @@
+/* Esto es un comentario */
+/* Selector universal - Aplica a todos los elementos de la pagina */
+*{
+    /* margin: 5px; Establece el margen para los cuatro lados */
+    padding: 5px; /* Espacio de relleno */
+box-sizing: border-box;
+
+}
+
+/* Selector de etiqueta - Aplica solo a una etiqueta en particular*/
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer{
+    /* border: 3px red solid; */
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400px;
+}
+
+/* Contenido principal */
+body{
+    /* background-color: rgb(218, 218, 108); */
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    min-height: 100px;
+    overflow: auto;
+    background-color: whitesmoke;
+    margin: 0.5rem;
+}
+
+header{
+    background: #fff;
+    box-shadow: 0 0 0.5rem rgba(122, 120, 119, 0.5);
+}
+
+footer{
+    background: rgb(255, 255, 255);
+}
+main>div {
+    /* border: 2px blue solid; */
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width:100%;
+}
+
+main>aside {
+    /* border: 2px blue solid; */
+    min-height: 180px;
+    min-width: 25%;
+    margin: 0.5rem;
+    float: left;
+    width: auto;
+}
+h1{
+    color:rgb(66, 7, 7);
+    background-color: rgb(246, 248, 246);
+}
+
+h2{
+    border-style:solid;
+    border-color: darkblue;
+    color: rgb(145, 10, 73);
+}
+
+/* Selector de clases - Se puede reutilizar */
+
+p{
+    color:black; font-style: italic; font-size: 130%;
+}
+
+/*CSS Grid - Grilla*/
+
+.container{
+    display: grid;
+    /*grid template: filas / columnas */
+    grid-template: 100px 1fr 100px / 400px 1fr;
+    grid-template-areas: "header header"
+                          "left contenido"
+                          " footer footer";
+    grid-gap: 20px;
+    height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    border: 2px red solid;
+}
+/* Menu bar */
+.header-logo{
+    grid-area: header-logo;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+}
+.header-menubar{
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 1rem
+}
+.header-menubar ul{
+    list-style: none;
+}
+.header-menubar li{
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0.5rem;
+}
+.header-menubar a{
+    text-decoration: none;
+    color: rgb(19, 73, 19)
+}
+.left{
+    grid-area: left;
+    border: 2px blue solid;
+}
+
+.contenido{
+    grid-area: contenido;
+    border: 2px blue solid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer{
+    grid-area: footer;
+    border: 2px blue solid;
+}
+
+.item{
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+li a {
+    display: block;
+    width: 60px;
+
+    }
+
+/* Colores del link */
+a:link {color: rgb(95, 12, 12);} /*Color del link*/
+a:hover {color: black} /*Cuando paso mouse por arriba*/
+a:visited {color: rgb(27, 92, 27);} /*Una vez visitado*/
+a:active {color: white;} /*Cuando doy click*/
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column; /*Cambio de horizontal a vertical en ambas clases*/
+    }
+    
+}
+
+
+
+
