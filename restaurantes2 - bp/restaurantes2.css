@@ -1,10 +1,10 @@
 * {
-
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
+    font-family:Arial, Helvetica, sans-serif !important;
     margin: 0;
 }
 
@@ -30,7 +30,19 @@ body {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+    text-decoration: none;
 }
+
+.nvf a {
+  text-decoration: none;
+}
+
+.navimg{
+  width: 7%;
+  margin-right:45%;
+  display: inline-block;
+  margin-right: 10px;
+} 
 
 .row {
     display: flex;
@@ -90,7 +102,7 @@ body {
     color: #000;
     line-height: 1.4;
     margin-bottom: 15px;
-    max-width: 350px;
+    max-width: 450px;
     grid-row: 2;
     text-align: center;
   }
@@ -125,6 +137,15 @@ hr {
     align-items: center;
 
 }
+
+.imagen{
+  width: 400px;
+ height: 500px;
+ /* border: 1px solid black;
+ border-radius: 10px; */
+ box-shadow: 0 0 10px #727272;
+ margin: 15px;
+}
 /* 
 
 .ofertas .img2:hover {
@@ -136,19 +157,20 @@ a:link{color:rgb(53, 53, 53);}
 a:hover {color:rgb(148, 93, 196);font-weight: bold;}
 a:visited {color: rgb(68, 23, 71);} */
 .container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    justify-content: center;
-    padding: 20px;
-    margin-right: 20px;
-  }
-  
-  .reviews {
-    grid-auto-flow: column;
-  }
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  justify-content: center;
+  margin-left: 70px;
+  padding: 20px;
+  margin-right: 10%;
+  /* margin-left: 10%; */
+  display: flex; 
+  align-items: center;
+}
   
   .map {
+    width: 500px;
     justify-content: end;
     margin-left: 60px;
     justify-content: center;
@@ -185,6 +207,11 @@ a:visited {color: rgb(68, 23, 71);} */
     grid-gap: 10px;
   }
   
+  .reviews {
+    grid-auto-flow: column;
+  }
+  
+
   ul {
     list-style: none;
     padding: 0;
@@ -202,3 +229,78 @@ a:visited {color: rgb(68, 23, 71);} */
     text-decoration: none;
     color: black;
   }
+
+  /* Carousel */
+  .carousel {
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 1 0 100%;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .prev-button,
+  .next-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 5px;
+    cursor:grab;
+    outline: none;
+    color: white;
+  }
+  
+  .prev-button {
+    margin-right: 10px;
+  }
+  
+  .next-button {
+    margin-left: 10px;
+  }
+
+  @keyframes centerAnimation {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.8);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .carousel {
+      animation: none;
+      transform: scale(0.8);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .container2 {
+      padding: 20px;
+    }
+  }
+  
