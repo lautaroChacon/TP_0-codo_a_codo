@@ -1,37 +1,26 @@
 *{
-    /* padding: 0; */
     box-sizing: border-box;
-    /* padding: 5px; */
 }
 
 html{
-    /* font-size: 1rem; */
     font-size: 62.5%;
-    /* height: 100%;
-    margin:0; */
-}
+ }
 
 body, header, main, footer{
-    /* border: 3px red solid; */
     min-height: 50px;
-
-    /* min-width: 400px; */
 }
-
 
 img {
     max-width: 100%;
 }
 /* Contenido principal */
 body{
-    /* background-color: rgb(218, 218, 108); */
-    background-color: rgb(9, 116, 9);
+    /* background-color: rgb(6, 66, 6); */
+    background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
-
 }
 main{
-    /* min-height: 100px; */
     overflow: auto;
     background-color: whitesmoke;
     /* border: 3px rgb(9, 116,9) solid; */
@@ -45,8 +34,6 @@ header{
 }
 
 main>div {
-    /* border: 2px blue solid; */
-    /* min-height: 300px; */
     margin: 0.5rem;
     height: auto;
     float: left;
@@ -66,75 +53,49 @@ footer a {
 }
 
 footer nav {
-    /* display: inline; */
     width: 220px;
     margin: 0 auto;
     display:flex;
 }
-
-/* .imagen{
-    float: left;
-    width: 400px;
-    height: auto;
-    margin-right: 1em;
-
-} */
 .secciones {
-    /* border: 3px green solid; */
     min-height: 50px;
     margin: 0.5rem;
     width: 100%;
     height:auto;
 }
+
+.youtube {
+    position: relative;
+    top: 20px;
+    margin: 0 auto; 
+    display: block;
+    width:100%;
+    height: 400px;
+}
+
 .secciones article {
-    /* border: 2px purple solid; */
     margin:0.5rem;
     min-height: 200px;
 }
 
 .gif-logo{
-    /* width: 25%; */
     width: 100px;
 }
 /* Menu bar */
 .header-logo{
-    width: auto;
-    /* display: inline-block; */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
     margin: 0.5rem;
-    float:right;
-}
-/* .header-menubar{
-    left: auto;
-    position: relative;
-    top: auto;
-    width: auto;
-    display:inline-flex;
-
-}
-.header-menubar ul{
-    list-style: none;
-}
-.header-menubar li{
     float: left;
-    font-weight: 700;
-    text-align: center;
-    margin: 0.5rem;
 }
-.header-menubar a{
-    text-decoration: none; /*Elimina el subayado*/
- /*   color: rgb(19, 73, 19)
-} 
-.header-menubar a:hover {  
-    color: rgb(167, 23, 23);
-} */ 
-/*pone el link en rojo cuando paso por arriba*/
 
 .header {
-    padding: 5px;
+    padding: 20px;
     text-align: center;
-    background-image:url(./media/Comer-en-exceso.webp) ;
-    /* color: white; */
-    color:black;
+    background-image:url(../img/cafe-tortoni-int2.jpg) ;
+    /* background-color: rgb(191, 184, 184); */
+    color:white;
     /* display:grid;
     grid-template-columns: 100px 1fr 100px; */
 }
@@ -158,3 +119,60 @@ footer nav {
 }
 
 
+/* .mapas {
+    margin: 15px;
+    justify-content: end;
+    width: 400px;
+    height: 400px;
+}
+
+
+.reseña {
+    text-align: center;
+    position: relative;
+
+    top: 70px;
+}
+.texto {
+    position: relative;
+    /* left: 400px;
+    top: 70px; */
+ /*   text-align: center;
+    
+} */
+.container{
+    display:grid;
+    grid-template-columns:400px 1fr;
+    grid-template-areas: "left contenido";
+}
+
+.left{
+    grid-area: left;
+}
+.contenido{
+    grid-area: contenido;
+}
+
+.item{
+    background-color: whitesmoke;
+    color:rgb(34, 34, 34);
+    padding: 10px;
+    width: 100%;
+}
+.mapa{
+    width:400px;
+    height:500px;
+}
+
+@media screen and (max-width: 768px){
+	.container {
+		grid-template-areas: "left contenido";
+        grid-template-columns:35% 65%;
+    
+	}
+    .mapa{
+        width:100%;
+        height:400px;
+    }
+}
+    

@@ -25,12 +25,14 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  transition: 0.2s;
 }
 
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
+
 
 
 /*Main*/
@@ -98,17 +100,92 @@ body {
   font-size:16px;
 }
 
-.imagen {
-  width: 300px;
-  height: 250px;
+/*Diaposit. clover pub*/
+.slider_1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider_1 ul {
+  display: flex;
+  animation: cambio 15s infinite  alternate ease-in-out;
+  width: 200%;
+}
+
+.slider_1 li {
+  width: 100%;
+  list-style: none;
+}
+
+
+.slider_1 > .imagen {
+  width: 100%;
+  height: 100%;
   box-shadow: 0 0 10px #727272;
   margin: 15px;
 }
-/*
-hr {
-  justify-content: center;
-  align-items: center; 
-}*/
+
+/*Diaposit. capital beer*/
+.slider_2 {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider_2 ul {
+  display: flex;
+  animation: cambio 15s infinite  alternate ease-in-out;
+  width: 200%;
+}
+
+.slider_2 li {
+  width: 100%;
+  list-style: none;
+}
+
+
+.slider_2 > .imagen {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px #727272;
+  margin: 15px;
+}
+
+/*Diaposit. tradersky*/
+.slider_3 {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider_3 ul {
+  display: flex;
+  animation: cambio 15s infinite  alternate ease-in-out;
+  width: 200%;
+}
+
+.slider_3 li {
+  width: 100%;
+  list-style: none;
+}
+
+
+.slider_3 > .imagen {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px #727272;
+  margin: 15px;
+}
+
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+}
 
 
 /*Footer*/
@@ -146,4 +223,12 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+.video-izq{
+  /* width: 25%; */
+  width: 150px;
+  height:auto;
+  float:left;
+  margin: 0.5rem;
+
 }
