@@ -95,3 +95,18 @@ legend, label {
     width: 100%;
 
 }
+
+.btn-inicio {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    flex-direction: row;
+    color: #eee;
+    cursor: pointer;
+    font-size: 20px;
+    outline: 0;
+    float: right;
+    text-align: center;
+    width: 15%;
+}
